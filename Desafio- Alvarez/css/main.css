@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* menu principal */
+
+.header {
+    background-color: #fdebde;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img{
+    width: 10vh;
+}
+
+header nav ul {
+    display: flex;
+    margin: 0.8rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    list-style: none;
+    color: beige;
+}
+
+nav ul li {
+    background-color: #88ada4;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0.2rem;
+    padding: 0.2rem;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 1rem;
+    box-shadow: 1.5px 1.5px black;
+    overflow: hidden;
+    }
+
+.mainIndex {
+    background-image: url(../multimedia/fondoMarmol.jpg); 
+    height: 30vh;
+    width: 100vw;
+    text-decoration: none;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "menuTextoInterno menuTextoInterno"
+                        "menuBoton menuBoton";
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+}
+
+.menuTextoInterno {
+    color: crimson;
+    text-shadow: 2px 2px beige;
+    grid-area: menuTextoInterno;
+}
+
+.menuBoton {
+    background-color: #88ada4;
+    color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    box-shadow: 1.5px 1.5px black;
+    grid-area: menuBoton;
+}
+
+.imagenMujer {
+    width: 0.1%; 
+    display: none;
+}
+
+/*lorem, titulos y footer*/ 
+
+.lorem {
+    padding: 0.2rem;
+    margin: 0.1rem;
+    background-color: rgb(232, 208, 212);
+    border-radius: 1rem;
+    overflow: hidden;
+    grid-area: lorem;
+}
+
+.titulos {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: crimson;
+    text-align: center;
+}
+
+.footer {
+    padding: 0.3rem;
+    margin: 0.3rem;
+    background-color: #88ada4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* quien soy */
+
+.mainQuienSoy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.7fr;
+    grid-template-areas: "imagenBelen imagenRecibida"
+                        "lorem lorem"
+                        "video video";
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+}
+
+.imagenBelen {
+    grid-area: imagenBelen;
+    text-align: center;
+}
+
+.imagenRecibida {
+    text-align: center;
+    grid-area: imagenRecibida;
+}
+
+.imagenRecibida img {    
+    width: 30vw;
+    height: 45vh;
+    margin: 0.3rem;
+}
+
+.imagenBelen img {
+    width: 30vw;
+    height: 45vh;
+    margin: 0.3rem;
+}
+
+.video {
+    grid-area: video;
+    text-align: center;
+}
+
+.video iframe {
+    width: 40vw;
+    height: 40vh;
+}
+
+/* contacto */
+
+form fieldset {
+    background-color: #fdebde;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form fieldset legend{
+    background-color: #88ada4;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.input {
+    text-align: center;
+    grid-area: enviar;
+}
+
+button, input, select, textarea {
+    background-color: #88ada4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+    border-radius: 0.3rem;
+    margin: 0.3rem;
+    padding: 0.3rem;
+    font-weight: bold;
+    border-style: bold;
+}
+
+.formContacto img {
+    width: 40vw;
+    height: 40vh;
+    grid-area: img;
+}
+
+.nombre {
+    grid-area: nombre;
+}
+
+.mail {
+    grid-area: mail;
+}
+
+.numero {
+    grid-area: numero;
+}
+
+.mensaje {
+    grid-area: mensaje;
+}
+
+/* servicio */
+
+.lorem1 {
+    padding: 0.2rem;
+    margin: 0.1rem;
+    background-color: rgb(232, 208, 212);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.lorem2 {
+    padding: 0.2rem;
+    margin: 0.1rem;
+    background-color: rgb(232, 208, 212);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.lorem3 {
+    padding: 0.2rem;
+    margin: 0.1rem;
+    background-color: rgb(232, 208, 212);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.boton { 
+    background-color: #88ada4;
+    color: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    margin: 0.2rem;
+    box-shadow: 1.5px 1.5px black;
+    text-align: center;
+}
+
+.textos {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* media queries */
+
+@media screen and (min-width:600px) {
+
+    .imagenMujer {
+        display: block;
+        grid-area: imagenMujer;
+    }
+
+    .mainIndex {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "menuTextoInterno imagenMujer"
+                            "menuBoton imagenMujer";
+    }
+
+}
+
+@media screen and (max-width:600px) {    
+    header img {
+        width: 11vw;
+        height: 8vh;
+    }
+
+    header nav ul li {
+        border-radius: 0.5rem;
+        font-size: 100%;
+    }
+
+    .menuTextoInterno {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .menuBoton {
+        margin-bottom: 2rem;
+    }
+
+    .video {
+        width: 100vw;
+        height: 40vh;
+    }
+
+    .imagenRecibida img {    
+        width: 33vw;
+        height: 25vh;
+    }
+    
+    .imagenBelen img {
+        width: 40vw;
+        height: 25vh;
+    }
+
+    .formContacto img {
+    display: none;
+}
+
+    .textos {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "lorem1 boton"
+                            "lorem2 boton"
+                            "lorem3 boton";
+        justify-content: space-around;
+}
+
+    .lorem1 {
+        grid-area: lorem1;
+    }
+
+    .lorem2 {
+        grid-area: lorem2;
+    }
+
+    .lorem3 {
+        grid-area: lorem3;
+    }
+
+    .boton {
+        grid-area: boton;
+    }
+}
