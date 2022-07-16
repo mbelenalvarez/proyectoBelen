@@ -38,9 +38,13 @@ nav ul li {
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 1rem;
-    box-shadow: 1.5px 1.5px black;
     overflow: hidden;
-    }
+}
+
+nav ul li:hover {
+    transform: scale(1);
+    box-shadow: 1.5px 1.5px black;
+}
 
 .mainIndex {
     background-image: url(../multimedia/fondoMarmol.jpg); 
