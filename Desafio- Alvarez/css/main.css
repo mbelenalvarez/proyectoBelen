@@ -42,7 +42,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-    transform: scale(1);
+    transform: scale(1.2);
     box-shadow: 1.5px 1.5px black;
 }
 
